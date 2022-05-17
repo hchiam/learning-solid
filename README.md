@@ -19,6 +19,7 @@ npx degit solidjs/templates/ts my-app # or npx degit solidjs/templates/js my-app
 cd my-app
 npm i # or yarn
 npm run dev # or yarn dev
+# http://localhost:3000
 ```
 
 and in `.tsconfig`:
@@ -42,19 +43,21 @@ and in `.babelrc`:
 "presets": ["solid"]
 ```
 
-<!-- ## Starting by testing out this repo
+## Starting by testing out this repo
 
 Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-solid.git && cd learning-solid && yarn; # and then ...
+git clone https://github.com/hchiam/learning-solid.git && cd learning-solid/my-app && yarn && yarn dev
+# http://localhost:3000
 ```
 
 Or with `npm`: (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-solid.git && cd learning-solid && npm install; # and then ...
-``` -->
+git clone https://github.com/hchiam/learning-solid.git && cd learning-solid/my-app && npm install && npm run dev
+# http://localhost:3000
+```
 
 ## Learn more
 
