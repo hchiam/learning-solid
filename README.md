@@ -62,3 +62,5 @@ git clone https://github.com/hchiam/learning-solid.git && cd learning-solid/my-a
 ## Learn more
 
 https://www.solidjs.com
+
+https://www.solidjs.com/tutorial/introduction_basics
