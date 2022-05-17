@@ -1,45 +1,61 @@
-# Learning template [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
+# Learning Solid.js [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/hchiam/learning-template/blob/main/LICENSE)
 
 Just one of the things I'm learning. https://github.com/hchiam/learning
 
-(To use this template fast with [`gh` CLI](https://github.com/hchiam/learning-gh), you can run [`gh repo create --template learning-template learning-...`](https://cli.github.com/manual/gh_repo_create) or [set up a custom shortcut CLI command](https://github.com/hchiam/learning-bash-scripts/blob/main/gh-cli-create-learning-repo-from-template.sh).)
-
-(To create a convenience script repo, use this template instead: https://github.com/hchiam/convenience)
-
-(To create a website fast, use a code generator like [`create-next-app`](https://github.com/hchiam/learning-nextjs), [`sapper`](https://github.com/hchiam/learning-sapper), a [svelte template](https://github.com/sveltejs/template), [`yo`](https://yeoman.io/generators), or my [project-template](https://github.com/hchiam/project-template))
+It looks mostly like React, but compiles to real DOM nodes and works directly with the real DOM without using a virtual DOM, and uses true reactivity (surgically updates just the DOM elements necessary, without needing to refresh entire components).
 
 <!-- Add reference link(s) here -->
 
-## From scratch
+https://www.youtube.com/watch?v=hw3Bx5vxKl0
 
-Using [`yarn`](https://github.com/hchiam/learning-yarn):
+https://www.solidjs.com
 
-```bash
-yarn add
+https://github.com/solidjs/solid
+
+## From scratch, with TypeScript
+
+```sh
+npx degit solidjs/templates/ts my-app # or npx degit solidjs/templates/js my-app
+cd my-app
+npm i # or yarn
+npm run dev # or yarn dev
 ```
 
-Or with `npm`:
+and in `.tsconfig`:
 
-```bash
-npm install
+```json
+"compilerOptions": {
+  "jsx": "preserve",
+  "jsxImportSource": "solid-js",
+}
 ```
 
-And then:
+## Or installing as dependencies to existing project
 
-```bash
-
+```sh
+npm install solid-js babel-preset-solid
 ```
 
-## Starting by testing out this repo <!-- Replace "template"s and "# and then ..."s in this section -->
+and in `.babelrc`:
+
+```json
+"presets": ["solid"]
+```
+
+<!-- ## Starting by testing out this repo
 
 Using [`yarn`](https://github.com/hchiam/learning-yarn): (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && yarn; # and then ...
+git clone https://github.com/hchiam/learning-solid.git && cd learning-solid && yarn; # and then ...
 ```
 
 Or with `npm`: (triple-click to select all)
 
 ```bash
-git clone https://github.com/hchiam/learning-template.git && cd learning-template && npm install; # and then ...
-```
+git clone https://github.com/hchiam/learning-solid.git && cd learning-solid && npm install; # and then ...
+``` -->
+
+## Learn more
+
+https://www.solidjs.com
